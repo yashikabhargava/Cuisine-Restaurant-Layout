@@ -1,0 +1,493 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+/* light orange- #FFAA4D
+orange- #FF8800 */
+
+h1, h2, h3, h4{
+  font-family: 'Lora', serif;
+}
+
+a, span, p{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header {
+  height: 5rem;
+  padding: 0.5rem 0;
+  width: 100%;
+  background-color: #F3F7F8;
+}
+
+header nav{
+  width: 80%;
+  margin: auto;
+  height: 4rem;
+}
+
+header nav > *{
+  width: 20%;
+  float: left;
+}
+
+header nav > img{
+  width: 8%;
+}
+
+header nav ul{
+  width: 50%;
+  height: 3rem;
+  margin: 0;
+  margin-left: 22rem;
+}
+
+header nav ul li{
+  width: fit-content;
+  margin: 0.7rem 1rem;
+  float: left;
+  list-style: none;
+}
+
+header nav ul li a{
+ 
+  color: #000000;
+  text-decoration: none;
+
+}
+
+header nav > a{
+  margin: 0.7rem 0.5rem;
+  width: 5%;
+  float: right;
+}
+
+header nav > a img{
+  margin: 0 2rem;
+ width: 35%;
+}
+
+main{
+  height: 40rem;
+  width: 100%;
+  background-color: #F3F7F8;
+}
+
+main .landing{
+  height: 40rem;
+  width: 90%;
+  margin-left: 10%;
+}
+
+main .landing .landing-left{
+  width: 55%;
+  height: 40rem;
+  padding: 3rem 3rem 3rem 0;
+  float: left;
+}
+
+main .landing .landing-left h1{
+  font-size: 4.6rem;
+}
+
+main .landing .landing-left .form{
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 3rem;
+}
+
+main .landing .landing-left .form input{
+  height: 3rem;
+  padding: 1rem;
+  width: 70%;
+  border: 1.5px solid rgb(158, 158, 158);
+  border-radius: 0.2rem;
+}
+
+main .landing .landing-left .form a, .section-one-botton{
+  padding: 0.94rem 2rem;
+  border-radius: 0.2rem;
+  color: white;
+  text-decoration: none;
+  background-color: #FF8800;
+}
+
+main .landing .landing-left ul{
+  padding: 0;
+}
+
+main .landing .landing-left ul li{
+  height: 2rem;
+  margin-right: 3rem;
+  list-style: none;
+  display: inline;
+}
+
+main .landing .landing-left ul li a{
+  height: 2rem;
+  text-decoration: none;
+}
+main .landing .landing-left ul li a img{
+  width: 3%;
+}
+
+main .landing .landing-left ul li a span{
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+main .landing .landing-right{
+  width: 45%;
+  height: 40rem;
+  float: left;
+}
+
+main .landing .landing-right img{
+  width: 97%;
+  float: right;
+}
+
+.section-one{
+  width: 100%;
+  height: 50rem;
+  background-color: #FCFCFC; 
+}
+
+.section-one .section-one-left{
+  width: 40%;
+  height: 50rem;
+  float: left;
+}
+
+.section-one .section-one-left > img{
+  width: 95%;
+  float: left;
+}
+
+.section-one .section-one-right{
+  width: 50%;
+  height: 50rem;
+  padding: 6rem 3rem 6rem 0;
+  float: left;
+}
+
+.section-one .section-one-right span{
+  color: #FF8800 ;
+  font-size: 1.1rem;
+}
+
+.section-one .section-one-right h2{
+  color: #000000;
+  font-size:  3.8rem;
+  margin-top: 1rem;
+}
+
+.section-one .section-one-right p, .section-four p, footer .footer-top .footer-section-left p, footer span{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  word-spacing: 0.2rem;
+  line-height: 1.5rem;
+}
+
+.section-one .section-one-right p + p{
+  margin-bottom: 4rem;
+}
+
+.section-two, .section-three{
+  width: 100%;
+  height: 72rem;
+  background-color: #F3F7F8;
+  padding-top: 5rem;
+}
+
+.section-two > section, .section-three > section{
+  width: 80%;
+  height: 65rem;
+  text-align: center;
+  margin: auto;
+}
+
+.section-span{
+  color: #FF8800 ;
+  font-size: 1.1rem;
+  width:fit-content;
+  margin: auto;
+  display: block; 
+}
+
+.section-h2{
+  width:fit-content;
+  margin: auto;
+  display: block;
+  font-size: 4rem; 
+}
+
+.section-two ul{
+  width: 50%;
+  margin: auto;
+  margin-top: 4rem;
+  height: 2rem; 
+  padding: 0;
+}
+
+.section-two ul li{
+  list-style: none;
+  display: inline;
+  width: 20%;
+  float: left;
+  border-bottom: 1.6px solid rgba(128, 128, 128, 0.54);
+  padding-bottom: 1rem;
+  
+}
+
+.section-two ul li a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.1rem;
+  padding-bottom: 0.8rem;
+}
+
+.section-two ul .breakfast{
+  color: #FF8800;
+  border-bottom: 2.3px solid #FF8800
+}
+
+.section-two section section{
+  width: 100%;
+  margin-top: 4rem;
+  height: 45rem; 
+}
+
+.section-two section section img{
+  width: 22%;
+  height: 20rem;
+  margin: 1rem;
+}
+
+.section-three{
+  background-color: #FCFCFC; 
+}
+
+.section-three section{
+  width: 90%;
+}
+
+.section-three section .call-logo{
+  width: 4%;
+  margin-top: 3.5rem;
+}
+
+.section-three section h4{
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0.6rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.section-three section .contact-number{
+  color: #FF8800;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: "lora", serif;
+}
+
+.section-three > section > section{
+  width: 70%;
+  height: 7rem;
+  margin: auto;
+}
+
+.section-three > section > section section{
+  padding: 1.5rem;
+  width: 40%;
+  height: 7rem;
+  float: left;
+}
+
+.section-three > section > section section + section{
+  float: right;
+}
+
+.section-three > section > section section span{
+  display: block;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.section-three > section > section section .time{
+  font-family: "lora", "serif";
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.section-three section .video-image{
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.section-four{
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  height: 36rem;
+}
+
+.section-four > img{
+  margin-top: 4rem;
+}
+
+.section-four h3{
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.section-four span ~ span{
+  font-size: 1.2rem;
+  color:  rgba(128, 128, 128, 0.664);
+}
+.section-four ul{
+  width: 20%;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+
+.section-four ul li{
+  list-style: none;
+  display: inline;
+}
+
+.section-four p{
+  width: fit-content;
+  margin: 2rem 10%;
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 2.2rem;
+  color: rgb(100, 100, 100);
+}
+
+footer {
+  width: 100%;
+  height: 30rem;
+  background-color: #F3F7F8;
+}
+
+footer .footer-top{
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+  height: 20rem;
+}
+
+footer .footer-top .footer-section-left{
+  width: 22%;
+  height: 20rem;
+  padding: 1rem;
+  float: left;
+}
+
+footer .footer-top .footer-section-left img{
+  width: 65%;
+  margin-left: 0;
+}
+
+footer .footer-top .footer-section-left p{
+  word-spacing: normal;
+}
+
+footer .footer-top .footer-h3{
+  font-size: 1.8rem;
+}
+
+footer .footer-top span{
+  display: block;
+  word-spacing: normal;
+  padding-bottom: 1.5rem;
+}
+
+footer .footer-top .footer-section-right{
+  width: 34%;
+  float: left;
+  height: 20rem;
+  padding: 1rem;
+}
+
+footer .footer-top .footer-section-right .form{
+  margin-top: 3.5rem;
+  width: 100%;
+  height: 3rem;
+}
+
+footer .footer-top .footer-section-right .form input{
+  height: 3rem;
+  padding: 1rem;
+  width: 70%;
+  border: 1.5px solid rgb(158, 158, 158);
+  border-radius: 0.2rem;
+}
+
+footer .footer-top .footer-section-right .form a{
+  padding: 0.94rem 1.8rem;
+  border-radius: 0.2rem;
+  color: white;
+  text-decoration: none;
+  background-color: #FF8800;
+}
+
+footer .footer-bottom{
+  width: 80%;
+  margin: auto;
+  padding-top: 2rem;
+  height: 5rem;
+}
+
+footer .footer-bottom span{
+  word-spacing: normal;
+}
+
+footer .footer-bottom ul{
+ width: fit-content;
+ float: right;
+ margin: 0.3rem;
+ padding: 0;
+}
+
+footer .footer-bottom ul li{
+  list-style: none;
+  margin: 1rem 2rem;
+  display: inline;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
